@@ -1,0 +1,48 @@
+.card{
+    padding: 20px;
+    margin: 20px;
+}
+#form-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+#upload_space{
+    display: flex;
+    justify-content: space-around;
+    background-color: #eee;
+}
+#uploadedimage{
+    object-fit: cover;
+    width:100%;
+    height:100%;
+}
+#btnUpload_space{
+    display: flex;
+    justify-content: space-around;
+}
+#btnUploadWidget{
+    margin: 12px auto;
+}
+#btns{
+    justify-content: space-around;
+}
+
+#services-list{
+    padding: 40px 0;
+    max-width: 10
+}
+#refresh-icon{
+    text-align: right;
+}
+table{
+    table-layout: fixed;
+    width: 100%;
+}
+td {
+    overflow: hidden;
+    white-space: pre-wrap;
+  }
+

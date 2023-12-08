@@ -1,0 +1,159 @@
+@import url(https://fonts.google.com/specimen/Raleway);
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Raleway', sans-serif;
+}
+
+body{
+    min-height: 100%;
+    background-image: url(../src/img/back2.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+html{
+    height: 100%;
+}
+
+.grid-container > *{
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+.navbar{
+    grid-area: navbar;
+    background-image: url(https://cdn.staticcrate.com/stock-hd/effects/footagecrate-4k-looping-network-tech-background-blue-1-prev-full.png);
+    background-size: cover; /* Ajusta el tamaño de la imagen para cubrir todo el contenedor */
+    background-position: center;
+    height: fit-content;
+    font-size: large;
+}
+.navbar-brand img {
+    border-radius: 15%;
+    margin: 5px;
+    margin-left: 15px;
+    width: 55px;
+    height: 55px;
+    animation: rotateY 5s linear infinite; /* Aplica la animación 'rotateY' */
+}
+
+@keyframes rotateY {
+    0%, 100% {
+        transform: perspective(400px) rotateY(0deg);
+    }
+    50% {
+        transform: perspective(400px) rotateY(180deg);
+    }
+}
+
+.navbar.navbar-expand-lg.navbar-dark{
+    width: 100%;
+    height: fit-content;
+    margin: 0%;
+    border: 0;
+    padding: 0;
+}
+.navbar.navbar{
+    width: 100%;
+    height: fit-content;
+    margin: 0%;
+    border: 0;
+    padding: 0;
+}
+.collapse.navbar-collapse{
+    justify-content: flex-end;
+    padding-left: 15px;
+}
+
+.header{
+    grid-area: header;
+    width: 100%;
+    height: fit-content;
+}
+.main{
+    grid-area: main;
+    display: grid;
+    width: 100%;
+    height: fit-content;
+    justify-content: center;
+    align-items: center;
+    font-family: inherit;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.footer{
+    grid-area: footer;
+    background-image: url(https://cdn.staticcrate.com/stock-hd/effects/footagecrate-4k-looping-network-tech-background-blue-1-effect-lg.jpg);
+    background-size: cover; /* Ajusta el tamaño de la imagen para cubrir todo el contenedor */
+    background-position: center;
+    height: fit-content;
+    padding:0;
+    margin: 0;
+    border: 0;
+}
+
+/*Mobile*/
+.grid-container{
+    display: grid;
+    gap: 0px;
+    grid-template-areas:
+    "navbar"
+    "header"
+    "main"
+    "sidebar"
+    "footer" ;
+    font-family: inherit;
+}
+/*Tablet*/
+@media(min-width:768px){
+    .grid-container{
+        grid-template-columns: auto;
+        grid-template-rows: auto;
+        grid-template-areas: 
+        "navbar navbar"
+        "header header"
+        "main main"
+        "sidebar sidebar"
+        "footer footer";
+    }
+}
+/*Desktop*/
+@media(min-width:900px){
+    .grid-container{
+        grid-template-columns: auto ;
+        grid-template-rows:  auto;
+        grid-template-areas: 
+        "navbar navbar navbar"
+        "header header header"
+        "main main main"
+        "sidebar sidebar sidebar"
+        "footer footer footer";
+    }
+}
+
+/*Estilo para pagina de portafolio*/
+.tituloPortafolio {
+    text-align: center;
+    margin: 50px 0;
+}
+
+.cardsPortafolio {
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    margin-bottom: 50px;
+    width: 100%;
+    margin: 30px;
+}
+.col{
+    filter: grayscale(100%);
+    transition:filter.25s}
+
+.col:hover{
+    filter: grayscale(0%);
+}
+
+

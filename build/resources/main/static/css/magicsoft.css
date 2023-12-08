@@ -1,0 +1,143 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-image: url(https://cdn.staticcrate.com/stock-hd/effects/footagecrate-4k-looping-network-tech-background-blue-1-prev-full.png);
+  background-size: cover; /* Ajusta el tamaño de la imagen para cubrir todo el contenedor */
+  background-position: center;
+}
+.container-xxl p{
+  font-size:3vh;
+  text-align: justify;
+}
+.navbar.navbar-expand-lg.bg-dark{
+  width: 100%;
+  height: fit-content;
+  justify-content: space-between;
+  padding: 20px 0;
+}
+.collapse.navbar-collapse{
+  justify-content: flex-end;
+}
+
+#header{
+  padding: 50px;
+  color: floralwhite;
+}
+#container{
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.footer{
+  padding-top: 50px;
+  margin: 30px;
+  
+}
+
+.footer div {
+  color: white;
+}
+
+/*empiezan CARDS*/
+
+img{
+  width:280px;
+  height:350px;
+  border-radius: 15px;
+  object-fit: cover;
+}
+
+/*ESTO MODIFICA LO RESPONSIVO*/
+.grid-cards{
+  display:grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px,1fr));
+  gap: 10px;
+}
+.columna{
+  margin:0 auto;
+  margin-bottom:30px;
+}
+/*ESTO MODIFICA LO RESPONSIVO*/
+
+.flip-card {
+background-color: transparent;
+width: 280px;
+height: 350px;
+perspective: 1000px;
+border-radius: 15px;
+}
+
+.flip-card-inner {
+position: relative;
+width: 100%;
+height: 100%;
+text-align: center;
+transition: transform 1s;
+transform-style: preserve-3d;
+box-shadow: 0 4px 8px 0 rgb(247, 246, 246);
+border-radius: 15px;
+}
+
+.flip-card:hover .flip-card-inner {
+transform: rotateY(180deg);
+border-radius: 15px;
+}
+.flip-card-front, .flip-card-back {
+position: absolute;
+width: 100%;
+height: 100%;
+-webkit-backface-visibility: hidden;
+backface-visibility: hidden;
+border-radius:20px;
+color: floralwhite;
+}
+
+.flip-card-back {
+transform: rotateY(180deg);
+box-sizing:border-box;
+margin-top:20px;
+padding: 15px;
+}
+.flip-card-back p{
+  text-align: justify;
+  font-size:1.8vh;
+}
+
+/*------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+
+.flip-card2 {
+background-color: transparent;
+width: 280px;
+height: 350px;
+perspective: 1000px;
+border-radius: 15px;
+}
+
+.flip-card-inner2 {
+position: relative;
+width: 100%;
+height: 100%;
+text-align: center;
+transition: transform 1s;
+transform-style: preserve-3d;
+box-shadow: 0 4px 8px 0 rgba(201, 199, 199, 0.751);
+border-radius: 15px;
+}
+.flip-card2:hover .flip-card-inner2 {
+transform: rotateY(180deg);
+border-radius: 15px;
+}
+.flip-card2-front, .flip-card-back2 {
+position: absolute;
+width: 100%;
+height: 100%;
+-webkit-backface-visibility: hidden;
+backface-visibility: hidden;
+border-radius: 15px;
+}
+.flip-card-back2 {
+background-image: url(https://images.pexels.com/photos/7134986/pexels-photo-7134986.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+color: floralwhite;
+transform: rotateY(180deg);
+}
+

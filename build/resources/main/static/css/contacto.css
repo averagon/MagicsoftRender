@@ -1,0 +1,55 @@
+.frase{
+    margin: 20px;
+    padding-left: 20px;
+    color: rgb(49, 48, 48);
+}
+.frase h1 {
+    text-align: center;
+    font-size: x-large;
+}
+.grid-container{
+    background-image: url(../src/img/back2.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+#formulario {
+    background-image: url(https://cdn.staticcrate.com/stock-hd/effects/footagecrate-4k-looping-network-tech-background-blue-1-effect-lg.jpg);
+    color: rgb(255, 251, 251);
+    padding: 20px;
+    text-align: justify;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: medium;
+    font-weight: normal;
+    border-radius:30px;
+
+    margin: auto;
+    max-width: 100%;
+    margin-bottom: 85px;
+    position: relative;
+}
+.btn input[type="submit"]{
+    border: 0px;
+    margin-top: 15px;
+    padding: 10px;
+    text-align: center;
+    width: 90%;
+    background: rgb(68, 78, 223);
+    color: #332902;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-weight: bold;
+    border-radius: 30px;
+    cursor: pointer;
+  }
+  
+  #msj_error{
+    margin-bottom: 20px;
+    border-radius: 30px;;
+    background: #FEF2C2;
+    padding: 0px;
+    text-align: center;
+    font-size: 20px;
+    transition: all 0.5s ease;
+}

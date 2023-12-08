@@ -1,0 +1,161 @@
+/* * {
+  font-family: 'Raleway'
+} */
+body {
+  margin: 0 auto;
+}
+.card {
+  border-style: none;
+  margin: 20px auto; 
+  max-width: 1100px;
+  overflow: hidden;
+}
+.card-img {
+  height: auto;
+  max-width: 100%;
+  margin: 0 auto;
+  display: block;
+  height: 250px;
+  border-radius: 20px;
+  background-position: center; /* Centra la imagen en el contenedor */
+  height: fit-content;
+  width: 100%;
+ 
+}
+
+.card-img-overlay {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 10px;
+}
+.centered{
+  color: rgb(49, 48, 48);
+  font-size: 2vw;
+  font-weight: 100px;
+}
+
+#datos.card{ /* no funciona, quiero ponerle un borde azul a las cards */
+  border: 10px solid rgb(0, 0, 255);
+  font-size: x-large;
+  font-family: inherit;
+}
+.card-title {
+  text-align: center;
+  font-size: 30px;
+  font-family: inherit;
+}
+.blockquote{
+  font-size: large;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  color: rgb(49, 48, 48);
+  font-weight: lighter;
+  font-size: x-large;
+}
+
+.new-card {
+  height: 150px;
+}
+.new-card .card-title {
+  font-size: medium;
+}
+
+.cardA {
+  height: 150px;
+  margin-bottom: 30px;
+}
+
+#mision{
+  width: 90%;
+  margin: 0 auto;
+  padding: 40px 0;
+  text-align:center;
+  font-size: medium;
+}
+
+#mision.card {
+  /* display: grid;
+  position: relative;
+  grid-template-rows: auto 1fr; */
+  box-shadow: 0 0 15px rgba(85, 85, 85, 0.2);
+  margin: 1em 0;
+  border-radius: 15px;
+}
+#datos{
+  text-align:center;
+}
+
+.card:hover{
+  background-color: rgb(191, 224, 255);
+}
+
+.mision{
+  background-color:  rgb(191, 224, 255);
+  margin: 50px;
+  padding:30px;
+  text-align: justify;
+}
+
+.vision{
+  background-color: rgb(191, 224, 255);
+  margin: 50px;
+  padding:30px;
+  text-align: justify;
+}
+
+.mision .img{
+  width:auto;
+  height:200px;
+  text-align: center;
+}
+ .vision .img{
+  width:auto;
+  height:200px;
+  }
+
+
+@media (max-width:650px) {
+  .centered{
+  font-size:25px;
+}
+  .blockquote{
+  font-size:15px;
+}
+.card-title {
+  font-size:15px;
+}
+.text-container {
+  color: rgb(0, 0, 0);
+  bottom: 2rem; 
+
+}
+}
+
+@media (max-width:770px) {
+  .centered{
+  font-size:25px;
+}
+  .blockquote{
+  font-size:15px;
+}
+.card-title {
+  font-size:19px;
+}
+ .text-container {
+  color: rgb(0, 0, 0);
+  bottom: 30rem; 
+} 
+}
+
+
+
+
+@media (min-width:320px){
+ .text-container {
+    color: rgb(0, 0, 0);
+    bottom: 30rem; 
+  } 
+
+}

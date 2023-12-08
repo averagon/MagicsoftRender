@@ -1,0 +1,12 @@
+0000000000000000000000000000000000000000 20feb435a6b6f26ac13e738fa1c7aaf7371b5f8e angelavg <angelaverag@gmail.com> 1701455516 -0600	clone: from github.com:averagon/MagicSoftBackEnd.git
+20feb435a6b6f26ac13e738fa1c7aaf7371b5f8e 93801aaf50b37b1876999fd12d211923a564b7a8 angelavg <angelaverag@gmail.com> 1701456245 -0600	pull origin main: Fast-forward
+93801aaf50b37b1876999fd12d211923a564b7a8 5677bcace2004da7826a598d34b090736bd75a7e angelavg <angelaverag@gmail.com> 1701473430 -0600	commit: se creo el Administrador Repository
+5677bcace2004da7826a598d34b090736bd75a7e f45ba604352b28970dc0f777d1802e4d543a256e angelavg <angelaverag@gmail.com> 1701475444 -0600	commit (merge): se agrego gitignore
+f45ba604352b28970dc0f777d1802e4d543a256e 28dd2792f821aad6809f43babf7428e81a157fc8 angelavg <angelaverag@gmail.com> 1701479428 -0600	pull origin main: Fast-forward
+28dd2792f821aad6809f43babf7428e81a157fc8 6f15d6a691489623dd62726a8508a2a611bf3502 angelavg <angelaverag@gmail.com> 1701889323 -0600	commit: se agrego el cifrado de contraseñas
+6f15d6a691489623dd62726a8508a2a611bf3502 67105b819b4a5000e6be64f4f4865583fc3a5d41 angelavg <angelaverag@gmail.com> 1701899821 -0600	commit: se copio el frontend en eclipse carpeta static
+67105b819b4a5000e6be64f4f4865583fc3a5d41 643e409f8433d95a1e0950c8efecd02b58f8899f angelavg <angelaverag@gmail.com> 1701913876 -0600	pull origin main: Fast-forward
+643e409f8433d95a1e0950c8efecd02b58f8899f 9b6a3e8d1973c4e83c0ad87f18eedd497318cb67 angelavg <angelaverag@gmail.com> 1701923354 -0600	pull origin main: Fast-forward
+9b6a3e8d1973c4e83c0ad87f18eedd497318cb67 144d7e2d50c42fb64f7e93a0a2aa6b2ab56ad325 angelavg <angelaverag@gmail.com> 1702011946 -0600	pull origin main: Fast-forward
+144d7e2d50c42fb64f7e93a0a2aa6b2ab56ad325 869467ee12e84819831433d91f91d22a8524cdda angelavg <angelaverag@gmail.com> 1702016343 -0600	pull origin main: Fast-forward
+869467ee12e84819831433d91f91d22a8524cdda 26b44d04a201f4fbbd17faee8c227cdb3ec9aa93 angelavg <angelaverag@gmail.com> 1702023526 -0600	commit: se agregaron token para cifrar y login controller
