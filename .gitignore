@@ -16,7 +16,9 @@ src/main/resources/application.properties
 bin/
 !**/src/main/**/bin/
 !**/src/test/**/bin/
-
+.gitoriginal
+.DS_Store
+**/.DS_Store
 ### IntelliJ IDEA ###
 .idea
 *.iws
