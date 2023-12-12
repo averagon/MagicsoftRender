@@ -79,26 +79,17 @@ var requestOptions = {
 			console.log(res);
 			console.log(res.length);
 			adminitradores=res;
-			localStorage.setItem("total_admins", adminitradores.length);
 			
-			const user = res.find((person) => person.email == mailLogin.value);
-		      if(user == undefined){
-		        msj_error="No existe usuario registrado con este correo";
-		        showErrorMessage(loginAlert, mailLogin, msj_error);
-		        console.log("MailNotFound:", msj_error, mailLogin.value);
-		      } else {
-		        if ( user.contraseña !== passLogin.value) {
-		          msj_error="Contraseña Incorrecta";
-		          showErrorMessage(loginAlert, passLogin, msj_error);
-		          console.log("IncorrectPassword:", msj_error, passLogin.value);
-		        } else {
-		          console.log("Correcto");
-		          localStorage.setItem("user", JSON.stringify(user));
-		          //localStorage.setItem("nameAdm", user.nombre);
+			if (res.accessToken != null){
+				console.log("Correcto");
+		          localStorage.setItem("user", JSON.stringify(res.accessToken));
 		          location.href ='./gestion.html';
-		        }// if pass check
-		      }// if user empty
-      
+			}else if(res.status == 500){
+				msj_error="Usuario y/o contraseña incorrecta";
+		          showErrorMessage(loginAlert, passLogin, msj_error);
+		          console.log("IncorrectPassword:", msj_error, passLogin.value);	
+			}
+			
 		}); //then
 		}).catch(function(error){
 			console.log("Problema en el JSON", error);
