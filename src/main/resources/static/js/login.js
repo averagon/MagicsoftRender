@@ -56,7 +56,7 @@ botonLogin.addEventListener("click", function(event){
 	  
 	console.log("TEST: Entra al JS");
 	let adminitradores;
-	const URL_MAIN='/api/administrador/'; 
+	const URL_MAIN='/api/login/'; 
 	  
 	  fetch(URL_MAIN,{
 		method:'get'
