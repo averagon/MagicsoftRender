@@ -17,7 +17,7 @@ body{
 .navbar{
     grid-area: navbar;
     text-decoration: none;
-    background-image: url(../src/magicsoft-bg.png);
+    background-image: url(../src/magicsoft-bg.jpg);
     height: fit-content;
     justify-content: space-between;
     color: #eee;
