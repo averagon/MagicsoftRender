@@ -92,7 +92,7 @@ console.log(localStorage.getItem("user"))
 		fetch(URL_MAIN,{
 			method:'POST',
 			headers:{
-				'Content-Type': 'application/json', 'Authorization':'Bearer: '+ localStorage.getItem("user")
+				'Content-Type': 'application/json', 'Authorization':'Bearer: '+ localStorage.getItem("token") 
 			},
 			body: JSON.stringify(service),
 			}).then(response=>response.json())

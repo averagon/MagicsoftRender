@@ -58,7 +58,7 @@ function createNavbar (nameAdm){
 
 
 
-const userLogged = JSON.parse(localStorage.getItem("user"));
+const userLogged = localStorage.getItem("user");
 
         console.log(userLogged.nombre)
 		createNavbar(userLogged.nombre);
