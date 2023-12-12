@@ -53,14 +53,26 @@ botonLogin.addEventListener("click", function(event){
   const isValid = validateLogin(mailLogin, passLogin);
 
   if (isValid){
-	  
+	 var myHeaders = new Headers();
+myHeaders.append("Content-Type", "application/json");
+
+var raw = JSON.stringify({
+  "email": mailLogin.value,
+  "contraseña": passLogin.value 
+});
+
+var requestOptions = {
+  method: 'POST',
+  headers: myHeaders,
+  body: raw,
+  redirect: 'follow'
+}; 
 	console.log("TEST: Entra al JS");
 	let adminitradores;
 	const URL_MAIN='/api/login/'; 
 	  
-	  fetch(URL_MAIN,{
-		method:'get'
-		}).then( function(response){
+	  fetch(URL_MAIN, requestOptions)
+		.then( function(response){
         response.json()
         .then(function (res){
 			console.log("TEST: En fetch");
