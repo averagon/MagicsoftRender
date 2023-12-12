@@ -82,7 +82,7 @@ var requestOptions = {
 			
 			if (res.accessToken != null){
 				console.log("Correcto");
-		          localStorage.setItem("user", JSON.stringify(res.accessToken));
+		          localStorage.setItem("user",res.accessToken);
 		          location.href ='./gestion.html';
 			}else if(res.status == 500){
 				msj_error="Usuario y/o contraseña incorrecta";

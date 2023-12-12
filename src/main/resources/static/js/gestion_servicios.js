@@ -85,7 +85,7 @@ btnSubmit.addEventListener("click", function(event){
         //PARA LOCALSTORAGE
         //services.push(JSON.parse(service)); 
         //localStorage.setItem("services", JSON.stringify(services)); 
-
+console.log(localStorage.getItem("user"))
 		//FETCH PUT - ADD SERVICE
 		const URL_MAIN='/api/servicios/'; 
 		console.log("TEST: Entra a gestion_servicios");
